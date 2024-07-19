@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming soon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      :root {
+    --input-color: #747a88;
+    --input-border: #CDD9ED;
+    --input-background: #fff;
+    --input-placeholder: #CBD1DC;
+    --input-border-focus: #047a22;
+    --group-color: var(--input-color);
+    --group-border: var(--input-border);
+    --group-background: #EEF4FF;
+    --group-color-focus: #fff;
+    --group-border-focus: var(--input-border-focus);
+    --group-background-focus: #00b7ff;
+}
+.form-field {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border .3s ease;
+&::placeholder {
+    color: var(--input-placeholder);
+}
+&:focus {
+    outline: none;
+    border-color: var(--input-border-focus);
+}
+}
+.form-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 32%;
+    & > span,
+.form-field {
+    white-space: nowrap;
+    display: block;
+    &:not(:first-child):not(:last-child) {
+        border-radius: 0;
+    }
+    &:first-child {
+        border-radius: 6px 0 0 6px;
+    }
+    &:last-child {
+        border-radius: 0 6px 6px 0;
+    }
+    &:not(:first-child) {
+        margin-left: -1px;
+    }
+}
+.form-field {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+& > span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--group-color);
+    background: var(--group-background);
+    border: 1px solid var(--group-border);
+}
+&:focus-within {
+    & > span {
+        color: var(--group-color-focus);
+        background: var(--group-background-focus);
+        border-color: var(--group-border-focus);
+    }
+}
+}
+
+html {
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+
+* {
+box-sizing: inherit;
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Mukta Malar', Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F5F9FF;  
+    .form-group {
+        max-width: 360px;
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+}
+.content{
+    height: 90vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(37, 21, 173) 18%, rgb(59, 75, 221) 49%, rgb(29, 148, 58) 100%);
+}
+.container {
+    margin: 15%;
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 8rem;
+    margin: 0;
+    color: #171717;
+}
+
+.error p {
+    font-size: 1.5rem;
+    color: #302f2f;
+}
+
+
+.back-link {
+    display: inline-block;
+    width: 20%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #171717;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #3a4569;
+}
+    </style>
+</head>
+<body>
+    <section class="main">
+        <section class="sidebar">
+            <div class="img1">
+                <img src="images/logo-icon.png" alt="">
+                &nbsp; Metoxi
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="main1" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                Dashboard
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub1" type="none">
+                            <li>
+                                <a href="index.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                eCommerce</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="main2" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M666-440 440-666l226-226 226 226-226 226Zm-546-80v-320h320v320H120Zm400 400v-320h320v320H520Zm-400 0v-320h320v320H120Zm80-480h160v-160H200v160Zm467 48 113-113-113-113-113 113 113 113Zm-67 352h160v-160H600v160Zm-400 0h160v-160H200v160Zm160-400Zm194-65ZM360-360Zm240 0Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                Widgets
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub2" type="none">
+                            <li>
+                                <a href="widgets.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Data</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="UE">
+                    UI Elements
+                </span>
+                <ul class="main3" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                Cards
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub3" type="none">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Basic</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Advance</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="main4" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                eCommerce
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub4" type="none">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Product
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Add Product
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Customer 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Customer Details
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Order Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="main5" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-280v80h640v-80H160Zm0-440h88q-5-9-6.5-19t-1.5-21q0-50 35-85t85-35q30 0 55.5 15.5T460-826l20 26 20-26q18-24 44-39t56-15q50 0 85 35t35 85q0 11-1.5 21t-6.5 19h88q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720Zm0 320h640v-240H596l84 114-64 46-136-184-136 184-64-46 82-114H160v240Zm200-320q17 0 28.5-11.5T400-760q0-17-11.5-28.5T360-800q-17 0-28.5 11.5T320-760q0 17 11.5 28.5T360-720Zm240 0q17 0 28.5-11.5T640-760q0-17-11.5-28.5T600-800q-17 0-28.5 11.5T560-760q0 17 11.5 28.5T600-720Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                Component
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub5" type="none">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Alert</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Accordian</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Badges</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Button</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Carousels</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Media Projects</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Models</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Nav&Tabs</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Pagination</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                PopOver & Tooltips</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Progress</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Spinners</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Notifications</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Typography</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Utilities</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="UE">
+                    Form & Tables
+                </span>
+                <ul class="main7" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                Form
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub7" type="none">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Form Elements
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Input Groups
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                
+                                Chechbox & Radiobuttons</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Form Layouts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Form Validaions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Form Vizard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    File Uploads
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Date Picker
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                  Select2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Form Reapeters
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="main9" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                Apps
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub9" type="none">
+                            <li>
+                                <a href="calendar.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                               Calendar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="clock.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Cloclk
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="UE">
+                    Pages
+                </span>
+                <ul class="main10" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                Authentication
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub10" type="none">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Basic
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Cover
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Boxed
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="main11" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+                            </div>
+                            <div class="t1">
+                                User Profile
+                            </div>
+                            <div class="Si2">
+                                
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main12" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-200q-27 0-52.5-5T538-219q58-49 90-117t32-144q0-76-32-144t-90-117q24-9 49.5-14t52.5-5q117 0 198.5 81.5T920-480q0 117-81.5 198.5T640-200Zm-320 0q-117 0-198.5-81.5T40-480q0-117 81.5-198.5T320-760q27 0 52.5 5t49.5 14q-17 14-32 30.5T362-676q-10-2-20.5-3t-21.5-1q-83 0-141.5 58.5T120-480q0 83 58.5 141.5T320-280q11 0 21.5-1t20.5-3q13 18 28 34.5t32 30.5q-24 9-49.5 14t-52.5 5Zm160-50q-57-39-88.5-100T360-480q0-69 31.5-130T480-710q57 39 88.5 100T600-480q0 69-31.5 130T480-250Z"/></svg>
+                            </div>
+                            <div class="t1">
+                              Time Lines
+                            </div>
+                            <div class="Si2">
+                                
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main13" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"/></svg>
+                            </div>
+                            <div class="t1">
+                            Pages
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub13" type="none">
+                            <li id="msl13">
+                                <a href="404.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                404 Error
+                                </a>
+                            </li>
+                            <li id="msl13-1">
+                                <a href="505.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                505 Error
+                                </a>
+                            </li>
+                            <li id="msl13-2">
+                                <a href="coming.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                    Coming Soon
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="main14" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                            </div>
+                            <div class="t1">
+                             FAQ
+                            </div>
+                            <div class="Si2">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main15" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z"/></svg>
+                            </div>
+                            <div class="t1">
+                             Pricing
+                            </div>
+                            <div class="Si2">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <span class="UE">Charts&Maps</span>
+                <ul class="main16" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M280-280h80v-280h-80v280Zm160 0h80v-400h-80v400Zm160 0h80v-160h-80v160ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Z"/></svg>
+                            </div>
+                            <div class="t1">
+                            Charts
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub16" type="none">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Apex
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Chart.js
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="main17" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm280-120q97-82 144.5-152.5T672-523q0-91-58-144t-134-53q-76 0-134 53t-58 144q0 60 47.5 130.5T480-240Zm0-230q-21 0-35.5-14.5T430-520q0-21 14.5-35.5T480-570q21 0 35.5 14.5T530-520q0 21-14.5 35.5T480-470Z"/></svg>
+                            </div>
+                            <div class="t1">
+                            Maps
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub17" type="none">
+                            <li>
+                                <a href="map.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                               World Maps
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="UE">Others</span>
+                <ul class="main18" type="none">
+                    <li>
+                        <a href="#">
+                            <div class="Si1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M360-390q-21 0-35.5-14.5T310-440q0-21 14.5-35.5T360-490q21 0 35.5 14.5T410-440q0 21-14.5 35.5T360-390Zm240 0q-21 0-35.5-14.5T550-440q0-21 14.5-35.5T600-490q21 0 35.5 14.5T650-440q0 21-14.5 35.5T600-390ZM480-160q134 0 227-93t93-227q0-24-3-46.5T786-570q-21 5-42 7.5t-44 2.5q-91 0-172-39T390-708q-32 78-91.5 135.5T160-486v6q0 134 93 227t227 93Zm0 80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>
+                            </div>
+                            <div class="t1">
+                            Menu levels
+                            </div>
+                            <div class="Si2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                            </div>
+                        </a>
+                        <ul class="sub18" type="none">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>
+                                Level 1
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <nav>
+            <div class="i1" id="toggle-btn">
+                <a href="index.html" id="home1">
+                  
+                </a>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="navicon">
+                <div class="i2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M268-240 42-466l57-56 170 170 56 56-57 56Zm226 0L268-466l56-57 170 170 368-368 56 57-424 424Zm0-226-57-56 198-198 57 56-198 198Z"/></svg>
+                </div>
+                <div class="i3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/></svg>
+                </div>
+                <div class="i4">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                </div>
+                <div class="i5">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+                </div>
+                
+            </div>
+            <div class="profile">
+                <img src="images/01.png" alt="" height="60px" width="60px">
+            </div>
+        </nav>
+        <section class="content" id="main-content">
+            <div class="container">
+                <div class="error">
+                    <h1>We are COMING SOON</h1>
+                    <p>Lets Join And Work With Us</p>
+                </div>
+                <div class="form-group">
+                    <input class="form-field" type="email" placeholder="Email">
+                    <span>@gmail.com</span>
+                </div>
+                <a href="index.html" class="back-link">Go Back to Home</a>
+            </div>
+        </section>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $(".main1").click(function () {
+                $(".sub1").slideToggle(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })
+            $(".main2").click(function () {
+                $(".sub2").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })   
+            $(".main3").click(function () {
+                $(".sub3").slideToggle(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })   
+            $(".main4").click(function () {
+                $(".sub4").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })   
+            $(".main5").click(function () {
+                $(".sub5").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })
+            $(".main6").click(function () {
+                $(".sub6").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })
+            $(".main7").click(function () {
+                $(".sub7").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            }) 
+            $(".main9").click(function () {
+                $(".sub9").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+            })  
+            $(".main10").click(function () {
+                $(".sub10").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })
+            $(".main11").click(function () {
+                $(".sub11").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })  
+            $(".main12").click(function () {
+                $(".sub12").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub11").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })
+            $(".main13").click(function () {
+                $(".sub13").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            })
+            $(".main14").click(function () {
+                $(".sub14").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            }) 
+            $(".main15").click(function () {
+                $(".sub15").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            }) 
+            $(".main16").click(function () {
+                $(".sub16").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub17").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            }) 
+            $(".main17").click(function () {
+                $(".sub17").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub18").slideUp(1000)
+            }) 
+            $(".main18").click(function () {
+                $(".sub18").slideToggle(1000)
+                $(".sub1").slideUp(1000)
+                $(".sub2").slideUp(1000)
+                $(".sub3").slideUp(1000)
+                $(".sub4").slideUp(1000)
+                $(".sub5").slideUp(1000)
+                $(".sub6").slideUp(1000)
+                $(".sub7").slideUp(1000)
+                $(".sub8").slideUp(1000)
+                $(".sub9").slideUp(1000)
+                $(".sub10").slideUp(1000)
+                $(".sub13").slideUp(1000)
+                $(".sub14").slideUp(1000)
+                $(".sub15").slideUp(1000)
+                $(".sub16").slideUp(1000)
+                $(".sub17").slideUp(1000)
+            }) 
+        })
+        var options = {
+
+          series: [{
+          name: '',
+          data: [10, 25, 12, 25, 18, 40, 22]
+        }],
+          chart: {
+          height: 240,
+          type: 'area'
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+        var options = {
+          series: [{
+          name: '',
+          data: [8.0, 10.0, 25.0, 18.0,38.0, 24.0, 20.0, 16.0,7.0]
+        }],
+          chart: {
+          height: 350,
+          type: 'bar',
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 10,
+            dataLabels: {
+              position: '', // top, center, bottom
+            },
+          }
+        },
+        dataLabels: {
+          enabled: false,
+          formatter: function (val) {
+            return val + "";
+          },
+          offsetY: -10,
+          style: {
+            fontSize: '12px',
+            colors: ["#DA510D"]
+          }
+        },
+        
+        xaxis: {
+          categories: [""],
+          position: 'top',
+          axisBorder: {
+            show: true
+          },
+          axisTicks: {
+            show: false
+          },
+          crosshairs: {
+            fill: {
+              type: 'gradient',
+              gradient: {
+                colorFrom: '#D8E3F0',
+                colorTo: '#BED1E6',
+                stops: [0, 100],
+                opacityFrom: 0.3,
+                opacityTo: 0.5,
+              }
+            }
+          },
+          tooltip: {
+            enabled: true,
+          }
+        },
+        yaxis: {
+          axisBorder: {
+            show: false
+          },
+          axisTicks: {
+            show: false,
+          },
+          labels: {
+            show: false,
+            formatter: function (val) {
+              return val + "";
+            }
+          }
+        },
+        title: {
+          text: '12.5% from last month',
+          floating: true,
+          offsetY: 330,
+          align: 'center',
+          style: {
+            color: '#fff'
+          }
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render()
+
+        var options = {
+          series: [78],
+          chart: {
+          height: 350,
+          type: 'radialBar',
+          offsetY: -20,
+          sparkline: {
+            enabled: true
+          }
+        },
+        plotOptions: {
+          radialBar: {
+            startAngle: -100,
+            endAngle: 100,
+            track: {
+              background: "#e7e7e7",
+              strokeWidth: '80%',
+              margin: 2, // margin is in pixels
+              dropShadow: {
+                enabled: true,
+                top: 2,
+                left: 0,
+                color: '#e7e7e7',
+                opacity: 1,
+                blur: 2
+              }
+            },
+            dataLabels: {
+              name: {
+                show: false
+              },
+              value: {
+                offsetY: -1,
+                fontSize: '22px',
+                color: '#fff '
+              }
+            }
+          }
+        },
+        grid: {
+          padding: {
+            top: -10
+          }
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'light',
+            shadeIntensity: 0.2,
+            inverseColors: false,
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [0, 50, 53, 91]
+          },
+        },
+        labels: ['Average Results'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart3"), options);
+        chart.render();
+
+        var options = {
+          series: [{
+          name: 'sales',
+          data: [20, 5, 60, 10, 30, 20, 25, 15, 31]
+        }, {
+          name: 'views',
+          data: [17, 10, 45, 15, 25, 15, 40, 10, 24]
+        }],
+          chart: {
+          type: 'bar',
+          height: 280
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '50%',
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          show: true,
+          width: 5,
+          colors: ['transparent']
+        },
+        xaxis: {
+          categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return  val + ""
+            }
+          }
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart4"), options);
+        chart.render();
+    </script>
+</body>
+</html>

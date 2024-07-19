@@ -1,0 +1,857 @@
+@media (min-width: 320px) and (max-width: 480px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        height: 200vh;
+        width: 100%;
+    }
+    .sidebar{
+        height: inherit;
+        width: 20%;
+        background-color: #bbd1eb;
+    }
+    .sidebar-wrapper{
+        width: 65%;
+        margin: 0px;
+    }
+    .search{
+        display: none;
+    }
+    .img1{
+        height: 60px;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    .img1 h1{
+        display: none;
+    }
+    .main1,.main2,.main3,.main4,.main5,.main6,.main7,.main9,.main10,.main11,.main13,.main14,.main16,.main17{
+        height: auto;
+        width: 100%;
+    }
+    .main1 .t1,.main2 .t1,.main3 .t1,.main4 .t1,.main5 .t1,.main6 .t1,.main7 .t1,.main8 .t1,.main9 .t1,.main10 .t1,.main11 .t1,.main12 .t1,.main13 .t1,.main14 .t1,.main15 .t1,.main16 .t1,.main17 .t1,.main18 .t1{
+        display: none;
+    }
+    .main1 li,a{
+        height: auto;
+        width: 100%;
+    }
+    .main1:hover{
+        background-color: #bbd1eb;
+    }
+    .main2:hover{
+        background-color: #bbd1eb;
+    }
+    .main3:hover{
+        background-color: #bbd1eb;
+    }
+    .main4:hover{
+        background-color: #bbd1eb;
+    }
+    .main5:hover{
+        background-color: #bbd1eb;
+    }
+    .main6:hover{
+        background-color: #bbd1eb;
+    }
+    .main7:hover{
+        background-color: #bbd1eb;
+    }
+    .main9:hover{
+        background-color: #bbd1eb;
+    }
+    .main10:hover{
+        background-color: #bbd1eb;
+    }
+    .main11:hover{
+        background-color: #bbd1eb;
+    }
+    .main12:hover{
+        background-color: #bbd1eb;
+    }
+    .main13:hover{
+        background-color: #bbd1eb;
+    }
+    .main14:hover{
+        background-color: #bbd1eb;
+    }
+    .main15:hover{
+        background-color: #bbd1eb;
+    }
+    .main16:hover{
+        background-color: #bbd1eb;
+    }
+    .main17:hover{
+        background-color: #bbd1eb;
+    }
+    .main18:hover{
+        background-color: #bbd1eb;
+    }
+    .UE{
+        display: none;
+    }
+    .Si2{
+        height: inherit;
+        width: 10%;
+        padding-left: 18px;
+     }
+    .Si2 svg {
+        display: none;
+      }
+    .sub1 li,a,.sub2 li,a,.sub3 li,a,.sub4 li,a,.sub5 li,a,.sub6 li,a.sub7 li a,.sub8 li,a,.sub9 li,a,.sub10 li,a,.sub11 li,a,.sub12 li,a,.sub16 li,a,.sub17 li,a,.sub18 li,a
+    {
+        font-size: 1px;
+        display: none;
+        padding-top: 5px;
+        padding-left: 25px;
+    }
+    .sub13 li,a
+    {
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 28px;
+    }
+    nav{
+        height: 10vh;
+        width: 80%;
+        background-color: #bbd1eb;
+        padding: 10px;
+        /* margin-left: 20%; */
+        /* justify-content: center; */
+    }
+    .i1{
+        height: 35px;
+        width: 35px;
+    }
+    .navicon{
+        height: inherit;
+        width: 65%;
+        margin: 0 25px;
+        display: flex;
+        align-items: center;
+    }
+    .i2,.i3,.i4,.i5{
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        padding-top: 15px;
+        margin-left: 20px;
+    }
+    .i2:hover{
+        border-radius: 50%;
+        background-color: #bbd1eb;
+    }
+    .i3:hover{
+        border-radius: 50%;
+        background-color: #bbd1eb;
+    }
+    .i4:hover{
+        border-radius: 50%;
+        background-color: #bbd1eb;
+    }
+    .i5:hover{
+        border-radius: 50%;
+        background-color: #bbd1eb;
+    }
+    .i8{
+        border-left: 1px solid #000;
+        padding: 0 10px;
+        margin: 0 10px;
+    }
+    .profile{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border-color: #181717;
+        margin-left: -25px;
+        padding-top: 5px;
+        padding-left: 2px;
+        padding-right: 10px;
+    }
+    .profile img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    .search{
+        padding-left: 15px;
+        width: 100%;
+    }
+    .search input[type="search"]{
+        height: 35px;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid black;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .content{
+        height: auto;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .dash{
+        padding: 18px;
+        font-size: 20px;
+    }
+    .dsb1{
+        height: 105vh;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .chart1{
+        height: 38vh;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .Pricing1{
+        height: 60vh;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .ordr{
+        height: 15vh;
+        width: 80%;
+        padding-top: 10px;
+        display: flex;
+    }
+    .cart{
+        height: 35px;
+        width: 35px;
+        padding-top:5px;
+    }
+    .inc{
+        height: 15vh;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .print{
+        height: 35px;
+        width: 35px;
+        padding-top:4px;
+    }
+    .ntfc{
+        height: 15vh;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .bell{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        padding-top:8px;
+    }
+    .pymt{
+        height: 15vh;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .card{
+        height: 35px;
+        width: 35px;
+        padding-top:4px;
+    }
+    .ntfc,.ordr,.inc{
+        border-right: none;
+        border-bottom: 1px solid rgb(68, 68, 68);
+    }
+    .price1,.price2,.price4{
+        height: 60px;
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 0px;
+        font-size: 18px;
+    }
+    .price3{
+        height: 60px;
+        width: 100%;
+        padding-top: 16px;
+        font-size: 18px;
+    }
+    .o,.incm,.n,.p{
+        height:40px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .dsb2{
+        height: 145vh;
+        width: 100%;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .tas{
+        height: 50vh;
+        width: 100%;
+    }
+    .k1{
+        font-size: 16px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .user{
+        font-size: 17px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .total{
+        height: 51vh;
+        width: 100%;
+    }
+    .k2{
+        font-size: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .chart3{
+        height: 250px;
+        width: 100%;
+        padding-top: 25px;
+    }
+    .increase{
+        height: 50px;
+        width: 100%;
+        font-size: 16px;
+        padding-left: 20px;
+        padding-bottom: 25px;
+    }
+    .auser{
+        font-size: 18px;
+        color: #16161d;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .snv{
+        height: 40vh;
+        width: 100%;
+    }
+    .chart4{
+        height: 320px;
+        width: 100%;
+    }
+    .my{
+        display: none;
+    }
+    .dsb3{
+        height: 20vh;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sty1{
+        height: 40px;
+        padding: 8px 20px;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .up{
+        height:30px;
+        width: 60%;
+        max-width: 100%;
+        font-size: 16px;
+        margin-left: 5px;
+        padding-top: 3px;
+    }
+    .ch1{
+        height: 30px;
+        width: 55%;
+        padding-left: 18px;
+        margin-left: 5px;
+        padding-bottom: 40px;
+    }
+    .media{
+        height: 100vh;
+        width: 100%;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    .social{
+        height: 100vh;
+        width: 95%;
+        margin: 10px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .s1,.s2,.s3{
+        height: 27vh;
+        width: 100%;
+        margin: 5px;
+    }
+    .g,.l,.f{
+        height: 35px;
+        width: 35px;  
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+    .google,.Linkedin,.facebook{
+        height: 18px;
+        width: 100%;
+    }
+    .more{
+        height: 30px;
+        width: 18%;
+        margin-left: 70%;
+    }
+    .more svg{ 
+        height: 50px;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .followers{
+        height: 80px;
+        width: 100%;
+        font-size: 18px;
+        padding-top: 50px;
+        padding-left: 25px;
+    }
+    .f1{
+        height: 50px;
+        width: 100%;
+        padding-top: 90px;
+        padding-right: 10px;
+    }  
+    .upA{
+        height:30px;
+        width: 70px;
+        font-size: 18px;
+        margin-left: 18px;
+        padding-top: 5px;
+    }
+    .downA{
+        height:30px;
+        width: 70px;
+        font-size: 18px;
+        margin-left: 18px;
+        padding-top: 5px;
+    }
+}
+/* TAblet Screen>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media (min-width: 481px) and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        height: 200vh;
+        width: 100%;
+    }
+    .sidebar{
+        height: inherit;
+        width: 20%;
+        background-color: #bbd1eb;
+        overflow-y: scroll;
+    }
+    .sidebar-wrapper{
+        width: 65%;
+        margin: 0px;
+    }
+    .search{
+        display: none;
+    }
+    .img1{
+        height: 60px;
+        padding-top: 10px;
+        padding-left: 45px;
+    }
+    .img1 h1{
+        display: none;
+    }
+    .main1,.main2,.main3,.main4,.main5,.main6,.main7,.main9,.main10,.main11,.main13,.main14,.main16,.main17,.main12{
+        height: auto;
+        width: 100%;
+        margin-left: 30px;
+    }
+    .main1 .t1,.main2 .t1,.main3 .t1,.main4 .t1,.main5 .t1,.main6 .t1,.main7 .t1,.main8 .t1,.main9 .t1,.main10 .t1,.main11 .t1,.main12 .t1,.main13 .t1,.main14 .t1,.main15 .t1,.main16 .t1,.main17 .t1,.main18 .t1{
+        display: none;
+    }
+    .main1 li,a{
+        height: auto;
+        width: 100%;
+    }
+    .main1:hover{
+        background-color: #bbd1eb;
+    }
+    .main2:hover{
+        background-color: #bbd1eb;
+    }
+    .main3:hover{
+        background-color: #bbd1eb;
+    }
+    .main4:hover{
+        background-color: #bbd1eb;
+    }
+    .main5:hover{
+        background-color: #bbd1eb;
+    }
+    .main6:hover{
+        background-color: #bbd1eb;
+    }
+    .main7:hover{
+        background-color: #bbd1eb;
+    }
+    .main9:hover{
+        background-color: #bbd1eb;
+    }
+    .main10:hover{
+        background-color: #bbd1eb;
+    }
+    .main11:hover{
+        background-color: #bbd1eb;
+    }
+    .main12:hover{
+        background-color: #bbd1eb;
+    }
+    .main13:hover{
+        background-color: #bbd1eb;
+    }
+    .main14:hover{
+        background-color: #bbd1eb;
+    }
+    .main15:hover{
+        background-color: #bbd1eb;
+    }
+    .main16:hover{
+        background-color: #bbd1eb;
+    }
+    .main17:hover{
+        background-color: #bbd1eb;
+    }
+    .main18:hover{
+        background-color: #bbd1eb;
+    }
+    .UE{
+        display: none;
+    }
+    .Si2{
+        height: inherit;
+        width: 10%;
+        padding-left: 18px;
+     }
+    .Si2 svg {
+        display: none;
+      }
+    .sub1 li,a,.sub2 li,a,.sub3 li,a,.sub4 li,a,.sub5 li,a,.sub6 li,a.sub7 li a,.sub8 li,a,.sub9 li,a,.sub10 li,a,.sub11 li,a,.sub12 li,a,.sub16 li,a,.sub17 li,a,.sub18 li,a
+    {
+        font-size: 1px;
+        display: none;
+        padding-top: 5px;
+        padding-left: 25px;
+    }
+    .sub13 li,a
+    {
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 28px;
+    }
+    nav{
+        height: 10vh;
+        width: 80%;
+        background-color: #bbd1eb;
+        padding: 10px;
+        justify-content: center;
+    }
+    .i1{
+        height: 40px;
+        width: 40px;
+    }
+    .navicon{
+        height: inherit;
+        width: 65%;
+        margin: 0 25px;
+        display: flex;
+        align-items: center;
+    }
+    .i2,.i3,.i4,.i5{
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        padding-top: 15px;
+        margin-left: 20px;
+    }
+    .i2:hover{
+        border-radius: 50%;
+        background-color: #bbd1eb;
+    }
+    .i3:hover{
+        border-radius: 50%;
+        background-color: #bbd1eb;
+    }
+    .i4:hover{
+        border-radius: 50%;
+        background-color: #bbd1eb;
+    }
+    .i5:hover{
+        border-radius: 50%;
+        background-color: #bbd1eb;
+    }
+    .i8{
+        padding: 0 10px;
+        margin: 0 10px;
+    }
+    .profile{
+        margin-left: -25px;
+        padding-top: 5px;
+        padding-left: 2px;
+        padding-right: 10px;
+    }
+    .profile img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .search{
+        padding-left: 15px;
+        width: 100%;
+    }
+    .search input[type="search"]{
+        height: 35px;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid black;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .content{
+        height: auto;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .dash{
+        padding: 18px;
+        font-size: 20px;
+    }
+    .dsb1{
+        height: 105vh;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .chart1{
+        height: 38vh;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .Pricing1{
+        height: 60vh;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .ordr{
+        height: 15vh;
+        width: 80%;
+        padding-top: 10px;
+        display: flex;
+    }
+    .cart{
+        height: 35px;
+        width: 35px;
+        padding-top:5px;
+    }
+    .inc{
+        height: 15vh;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .print{
+        height: 35px;
+        width: 35px;
+        padding-top:4px;
+    }
+    .ntfc{
+        height: 15vh;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .bell{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        padding-top:8px;
+    }
+    .pymt{
+        height: 15vh;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .card{
+        height: 35px;
+        width: 35px;
+        padding-top:4px;
+    }
+    .ntfc,.ordr,.inc{
+        border-right: none;
+        border-bottom: 1px solid rgb(68, 68, 68);
+    }
+    .price1,.price2,.price4{
+        height: 60px;
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 0px;
+        font-size: 18px;
+    }
+    .price3{
+        height: 60px;
+        width: 100%;
+        padding-top: 16px;
+        font-size: 18px;
+    }
+    .o,.incm,.n,.p{
+        height:40px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .dsb2{
+        height: 145vh;
+        width: 100%;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .tas{
+        height: 50vh;
+        width: 100%;
+    }
+    .k1{
+        font-size: 16px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .user{
+        font-size: 17px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .total{
+        height: 51vh;
+        width: 100%;
+    }
+    .k2{
+        font-size: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .chart3{
+        height: 250px;
+        width: 100%;
+        padding-top: 25px;
+    }
+    .increase{
+        height: 50px;
+        width: 100%;
+        font-size: 16px;
+        padding-left: 20px;
+        padding-bottom: 25px;
+    }
+    .auser{
+        font-size: 18px;
+        color: #16161d;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .snv{
+        height: 40vh;
+        width: 100%;
+    }
+    .chart4{
+        height: 320px;
+        width: 100%;
+    }
+    .my{
+        display: none;
+    }
+    .dsb3{
+        height: 20vh;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sty1{
+        height: 40px;
+        padding: 8px 20px;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .up{
+        height:30px;
+        width: 60%;
+        max-width: 100%;
+        font-size: 16px;
+        margin-left: 5px;
+        padding-top: 3px;
+    }
+    .ch1{
+        height: 30px;
+        width: 55%;
+        padding-left: 18px;
+        margin-left: 5px;
+        padding-bottom: 40px;
+    }
+    .media{
+        height: 100vh;
+        width: 100%;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    .social{
+        height: 100vh;
+        width: 95%;
+        margin: 10px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .s1,.s2,.s3{
+        height: 27vh;
+        width: 70%;
+        margin: 5px;
+    }
+    .g,.l,.f{
+        height: 35px;
+        width: 35px;  
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+    .google,.Linkedin,.facebook{
+        height: 18px;
+        width: 100%;
+    }
+    .more{
+        height: 30px;
+        width: 18%;
+        margin-left: 70%;
+    }
+    .more svg{ 
+        height: 50px;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .followers{
+        height: 80px;
+        width: 100%;
+        font-size: 18px;
+        padding-top: 50px;
+        padding-left: 25px;
+    }
+    .f1{
+        height: 50px;
+        width: 100%;
+        padding-top: 90px;
+        padding-right: 10px;
+    }  
+    .upA{
+        height:30px;
+        width: 70px;
+        font-size: 18px;
+        margin-left: 18px;
+        padding-top: 5px;
+    }
+    .downA{
+        height:30px;
+        width: 70px;
+        font-size: 18px;
+        margin-left: 18px;
+        padding-top: 5px;
+    }
+}
